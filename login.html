@@ -11,6 +11,8 @@
 	
 	<link rel="stylesheet" href="css/style.css">
 
+	
+
 	</head>
 	<body>
 
@@ -38,17 +40,19 @@
 									</p>
 								</div>
 			      	</div>
-							<form action="#" class="signin-form">
+							<form name="myForm" action="#" class="signin-form">
 			      		<div class="form-group mb-3">
-			      			<label class="label" for="name">Username</label>
-			      			<input type="text" class="form-control" placeholder="Username" required>
+			      			<label class="label" for="name" >Username</label>
+			      			<input  name="Uname" type="text" class="form-control" placeholder="Username"  required>
 			      		</div>
 		            <div class="form-group mb-3">
 		            	<label class="label" for="password">Password</label>
-		              <input type="password" class="form-control" placeholder="Password" required>
+		              <input  name="Pass" type="password" class="form-control" placeholder="Password"  required>
 		            </div>
 		            <div class="form-group">
-		            	<button type="submit" class="form-control btn btn-primary rounded submit px-3">Sign In</button>
+		            	<a href="./iframe.html">
+							<button type="submit" class="form-control btn btn-primary rounded submit px-3" onclick="myFunction()">LogIn </button>
+						</a>
 		            </div>
 		            <div class="form-group d-md-flex">
 		            	<div class="w-50 text-left">
@@ -58,7 +62,7 @@
 										</label>
 									</div>
 									<div class="w-50 text-md-right">
-										<a href="./iframe.html">Forgot Password</a>
+										<a href="#">Forgot Password</a>
 									</div>
 		            </div>
 		          </form>
@@ -70,6 +74,7 @@
 		</div>
 	</section>
 
+	<script src="script.js"></script>
 	<script src="js/jquery.min.js"></script>
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
