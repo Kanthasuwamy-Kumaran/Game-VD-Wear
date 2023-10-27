@@ -3,9 +3,8 @@ function myFunction(){
     var pw = document.forms["myForm"]["Pass"].value;
     if(un=="admin"&&pw=="1234"){
         window.location.href="iframe.html"
-        alert("True UserName and Password");
     }
     else{
-        alert("Invalid UserName and Password");
+        alert("Invalid Recheck");
     }
 }
